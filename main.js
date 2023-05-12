@@ -1,33 +1,29 @@
-let str = " hello  world      "
+let str = document.getElementById("text").value
 
-str = str.trim().toLowerCase()
+let wordCounter = 1
 
-str = str.replace(/\s+/g, "");
-
-    let charMap = {}
+let charMap = {}
 
 function mostCommonChar() {
 
+  str = str.trim().toLowerCase()
+
+  str = str.replace(/\s+/g, "");
+  
 
     for (let i = 0; i < str.length; i++) {
         charMap[str[i]] = charMap[str[i]] + 1 || 1
   }
+  document.getElementById("results").innerHTML= charMap
 }
 
-mostCommonChar()
 
-console.log(charMap)
 
-let wordCountText = "Please count the words properly"
-let wordCounter = 1
 const wordCount = () => {
-  for (let j = 0; j < wordCountText.length; j++){
-    if (wordCountText[j] === " "){
+  for (let j = 0; j < str.length; j++){
+    if (str[j] === " "){
       wordCounter++
     }
   }
-
+  document.getElementById("results").innerHTML= "word count: " + wordCounter
 }
-  wordCount()
-  console.log(wordCounter)
-
