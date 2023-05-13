@@ -1,19 +1,24 @@
+
+
 body {
-    background-color: #574B60;
+    background-color: c1666b;
 }
 
 h1 {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-family: 'IBM Plex Mono', monospace;
     margin-bottom: 10vh;
     font-size: 2.5vw;
  }
 
  .results {
-    border: 1px solid red;
-    height: 5vh;
+  font-size: 1vw;
+    font-family: 'IBM Plex Mono', monospace;
+    /* border: 1px solid red; */
+    height: 2.5vh;
     margin-bottom: 5vh;
  }
+
 
 .main {
 
@@ -32,7 +37,9 @@ h1 {
 }
 
 textarea {
+  text-align: left;
     font-family: 'IBM Plex Mono', monospace;
+    padding: 3vh;
 }
 
 button {
