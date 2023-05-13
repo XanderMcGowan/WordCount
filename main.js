@@ -4,7 +4,7 @@ function mostCommonChar() {
   let charMap = {}
   let str = document.getElementById("text").value
   str = str.trim().toLowerCase()
-
+  str.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '')
   str = str.replace(/\s+/g, "");
   
 

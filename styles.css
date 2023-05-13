@@ -16,7 +16,13 @@ h1 {
     font-family: 'IBM Plex Mono', monospace;
     /* border: 1px solid red; */
     height: 2.5vh;
-    margin-bottom: 5vh;
+    width: 30vw;
+    margin-bottom: 4vh;
+ }
+
+ #results1 {
+  word-wrap: break-word;
+  height: 10vh;
  }
 
 
